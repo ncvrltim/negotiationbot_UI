@@ -1,0 +1,105 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+}
+.right-pane {
+  max-height: 100%;
+  position: fixed;
+  overflow: scroll;
+  left: 250px;
+}
+.left-pane{
+  max-height: 100vh;
+    position: fixed;
+    top: 0;
+}
+
+.car-container {
+  min-width: calc(100vw - 260px);
+}
+.right-corner {
+  position: relative;
+  top: 26px;
+  left: calc(100% - 50px);
+  cursor: pointer;
+}
+
+.gg-info {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  transform: scale(var(--ggs, 1));
+  width: 20px;
+  height: 20px;
+  border: 2px solid;
+  border-radius: 40px;
+}
+.gg-info::after,
+.gg-info::before {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  border-radius: 3px;
+  width: 2px;
+  background: currentColor;
+  left: 7px;
+}
+.gg-info::after {
+  bottom: 2px;
+  height: 8px;
+}
+.gg-info::before {
+  height: 2px;
+  top: 2px;
+}
+
+.App-header {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  z-index: 1000;
+}
+
+.App-link {
+  color: #61dafb;
+}
+.dashboard-home {
+  padding: 38px 0px;
+}
+.open {
+  display: block;
+}
+.closed {
+  display: none;
+}
+
+.link {
+  color: blue;
+  text-decoration-line: underline;
+}
+.close-button {
+  position: absolute;
+  color: #535151;
+  text-decoration: double;
+  font-size: 15px;
+  cursor: pointer;
+  right: 10px;
+  top: 10px;
+  width: 15px;
+  z-index: 1;
+  font-weight: bolder;
+}
+
+.chat-bot {
+  border-radius: 5px;
+  border: 1px solid#CCC;
+}
+.react-chatbot-kit-chat-input {
+  color: black;
+  font-size: 1.5rem !important;
+}
+.react-chatbot-kit-chat-container {
+  width: 400px !important;
+}
